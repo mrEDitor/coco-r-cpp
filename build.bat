@@ -1,3 +1,5 @@
-cl *.cpp -FeCoco.exe /O2 /wd4996
-
-del *.obj
+md build
+pushd build
+cmake ..
+cmake --build . --config Release
+popd

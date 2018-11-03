@@ -1,4 +1,5 @@
 #!/bin/sh
-
-g++ *.cpp -o Coco -g -Wall
-
+mkdir build
+cd build
+cmake ..
+cmake --build .
